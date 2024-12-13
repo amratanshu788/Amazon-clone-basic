@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: Arial;
-    box-sizing: border-box; /* Fixed typo from 'border-box' */
+    border: border-box;
     scroll-behavior: smooth;
 }
 
@@ -11,8 +11,7 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Changed to better fit smaller screens */
-    padding: 0 15px; /* Added padding for smaller screens */
+    justify-content: space-evenly;
 }
 
 .nav-logo {
@@ -32,7 +31,7 @@
 }
 .location {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .Flag {
@@ -53,12 +52,12 @@
 
 .add-first {
     color: #cccccc;
-    font-size: 0.75rem; /* Adjusted font-size for smaller screens */
-    margin-left: 10px;
+    font-size: 0.85rem;
+    margin-left: 15px;
 }
 
 .add-second {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-left: 3px;
 }
 
@@ -71,11 +70,10 @@
 
 .nav-search {
     display: flex;
-    justify-content: space-between; /* Adjusted for smaller screens */
-    width: 100%; /* Adjusted width for responsive behavior */
+    justify-content: space-evenly;
+    width: 620px;
     height: 40px;
     border-radius: 4px;
-    margin-top: 10px; /* Added margin for spacing */
 }
 
 .search-select {
@@ -104,11 +102,9 @@
     border-bottom-right-radius: 4px;
     color: #0f1111;
 }
-
 .nav-search:hover {
     border: 2px solid #febd69;
 }
-
 /* box4 */
 
 span {
@@ -139,18 +135,16 @@ span {
     color: white;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
 }
-
 .panel p {
     display: inline;
     margin-left: 15px;
 }
 
 .panel-ops {
-    width: 100%;
+    width: 70%;
     font-size: 0.85rem;
-    text-align: center; /* Adjusted for smaller screens */
+    margin-left: -70px;
 }
 
 .panel-deals {
@@ -163,7 +157,7 @@ span {
 .hero-section {
     background-image: url("image/hero image.jpg");
     background-size: cover;
-    height: 200px; /* Adjusted height for smaller screens */
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -176,11 +170,10 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.75rem; /* Adjusted for smaller screens */
-    width: 90%;
-    margin-bottom: 15px;
+    font-size: 0.85rem;
+    width: 96%;
+    margin-bottom: 25px;
 }
-
 .hero-msg a {
     text-decoration: none;
     color: #007185;
@@ -196,22 +189,23 @@ span {
 }
 
 .box {
-    height: 300px; /* Adjusted height for smaller screens */
-    width: 45%; /* Adjusted width for responsive behavior */
+    height: 400px;
+    width: 23%;
     background-color: white;
-    padding: 15px;
+    padding: 20px 0px 15px;
     margin-top: 15px;
 }
 
 .box-img {
-    height: 200px; /* Adjusted height for smaller screens */
+    height: 300px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .box-content {
-    margin: 0 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .box-content p {
@@ -236,26 +230,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.75rem; /* Adjusted font-size for smaller screens */
+    font-size: 0.85rem;
 }
 
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
+    height: 300px;
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
     justify-content: space-evenly;
-    padding: 10px 0;
 }
 
 ul {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 ul a {
     display: block;
-    font-size: 0.75rem;
-    margin-top: 5px;
+    font-size: 0.85rem;
+    margin-top: 10px;
     color: #dddddd;
 }
 
@@ -292,51 +285,4 @@ ul a {
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .nav-search {
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .shop-section .box {
-        width: 90%; /* Full width for smaller screens */
-    }
-
-    .hero-section {
-        height: 150px;
-    }
-
-    .hero-msg {
-        font-size: 0.6rem;
-    }
-
-    .panel {
-        flex-direction: column;
-    }
-
-    .foot-panel2 {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-search {
-        width: 100%;
-    }
-
-    .shop-section .box {
-        height: auto;
-    }
-
-    .footer {
-        font-size: 0.6rem;
-    }
 }
