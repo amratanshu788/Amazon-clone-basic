@@ -18,7 +18,7 @@ This project is a clone of the Amazon website, designed to mimic its appearance.
 
 1. Clone this repository.
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/amratanshu788/Amazon-clone-basic.git
    ```
 2. Navigate to the project folder.
    ```bash
@@ -41,4 +41,4 @@ project-folder
 
 - Add real product links and categories.
 - Implement user authentication.
-- Add backend for handling cart and order management.
+- Add a backend for handling carts and order management.
